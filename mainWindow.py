@@ -7,7 +7,7 @@ class setLabelbyPushButton(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
 
-        QMainWindow.setWindowTitle(self, 'This is my first Python GUI')
+        QMainWindow.setWindowTitle(self, 'This is my first Python GUI')     # use to set window title of program
         QMainWindow.setWindowFlags(self, QtCore.Qt.WindowCloseButtonHint)   # use to disable maximize and minimize buttons
         
         self.buttonA = QtWidgets.QPushButton('Click me', self)
@@ -35,7 +35,7 @@ if __name__ == "__main__": # to start the file.
     app = QApplication([])
     test = setLabelbyPushButton()
     test.show()
-    sys.exit( app.exec_() ) # to neusre a clean exit of the application when X button is clicked.
+    sys.exit( app.exec_() ) # to ensure a clean exit of the application when X button is clicked.
 
      
 '''
