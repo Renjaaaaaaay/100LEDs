@@ -43,7 +43,11 @@ class Window(QMainWindow):
         self.setCentralWidget(mainWidget)
     
     def colorChanged(self, color):
-         self.currentColor.setText(str(color))
+         r = color.red()
+         g = color.green()
+         b = color.blue()
+
+         self.currentColor.setText("Current color is " f'R{str(r)}, G{str(g)}, B{str(b)}')
 
 
 if __name__ == "__main__":
