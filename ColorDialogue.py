@@ -14,12 +14,11 @@ class Window(QMainWindow):
         defaultColor = QColor(255, 255, 255)
         colorPicker = ColorPickerWidget(color=defaultColor, orientation='vertical')
         
-        colorPicker.colorChanged.connect(self.colorChanged)
+        colorPicker.colorChanged.connect(self.colorChanged) # to connect when color changes
     
         
         self.currentColor = QLabel()
       
-        self.currentColor.setText(str(defaultColor))
 
         setColor_specificID = QPushButton('Set Color', self)
         setColor_toAll = QPushButton('Set Color to All', self)
