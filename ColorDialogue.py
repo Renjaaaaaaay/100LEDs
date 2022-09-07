@@ -47,7 +47,7 @@ class Window(QMainWindow):
          g = color.green()
          b = color.blue()
 
-         self.currentColor.setText("Current color is " f'R{str(r)}, G{str(g)}, B{str(b)}')
+         self.currentColor.setText("Current color is " f'R{str(r)}, G{str(g)}, B{str(b)}') # TO DISPLAY RGB
 
 
 if __name__ == "__main__":
